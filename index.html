@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Project 4 - Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">FULL STACK DEVELOPMENT</p>
+      <h1>Frontend ↔ Backend Integration</h1>
+      <p>REST API • Fetch • JSON • Async/Await • CORS</p>
+    </div>
+    <span id="apiStatus" class="status">Checking API...</span>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Task Manager</h2>
+      <p class="muted">This page communicates with the Express backend through REST APIs.</p>
+
+      <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="Enter a new task..." autocomplete="off">
+        <button type="submit">Add Task</button>
+      </form>
+
+      <p id="message" class="message"></p>
+
+      <div class="toolbar">
+        <button id="refreshBtn" class="secondary">Refresh Tasks</button>
+        <span id="taskCount">0 tasks</span>
+      </div>
+
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Integration Flow</h2>
+      <div class="flow">
+        <div>Browser UI</div>
+        <span>→</span>
+        <div>fetch()</div>
+        <span>→</span>
+        <div>Express REST API</div>
+        <span>→</span>
+        <div>JSON Response</div>
+        <span>→</span>
+        <div>UI Update</div>
+      </div>
+
+      <div class="api-box">
+        <h3>API Endpoints</h3>
+        <code>GET /api/tasks</code>
+        <code>POST /api/tasks</code>
+        <code>PUT /api/tasks/:id</code>
+        <code>DELETE /api/tasks/:id</code>
+        <code>GET /api/health</code>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Full Stack Project 4 • Frontend and Backend Integration</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

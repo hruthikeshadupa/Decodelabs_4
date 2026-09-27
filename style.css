@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.hero {
+  padding: 38px 8%;
+  background: linear-gradient(120deg, #dff7e9, #dceeff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+}
+
+.hero p {
+  margin-bottom: 0;
+}
+
+.status {
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: #fff;
+  font-weight: bold;
+}
+
+.container {
+  width: min(1050px, 92%);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.muted {
+  color: #6b7280;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 15px;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 17px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 12px;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task.done .title {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+.message {
+  min-height: 20px;
+  color: #2563eb;
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.flow div {
+  padding: 10px;
+  border-radius: 8px;
+  background: #eef2ff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.api-box {
+  display: grid;
+  gap: 8px;
+}
+
+.api-box code {
+  padding: 9px;
+  background: #111827;
+  color: #d1fae5;
+  border-radius: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
